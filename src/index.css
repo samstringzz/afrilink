@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Slick carousel */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  > div {
+    height: 100%;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 4px;
+}
+
+.slick-list {
+  margin: 0 -4px;
+  overflow: visible !important;
+  overflow-x: clip !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slick-slider {
+  overflow: hidden !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slick-slider {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+.slick-track {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.slick-slide {
+  padding: 0 0.5rem;
+}
+
+.transform {
+  transform-origin: top left;
+}
