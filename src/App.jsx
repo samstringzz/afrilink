@@ -1,19 +1,18 @@
-import CardSlider from './CardSlider';
-import NewArrivals from './components/NewArrivals';
-import AboutUs from './components/AboutUs'
-import WhyChooseUs from './components/WhyChooseUS';
-import BlogPostSection from './components/BlogPostSection';
-import ReviewSection from './components/ReviewSection';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import VendorPage from './pages/VendorPage';
 
-export default function App() {
+const App = () => {
   return (
-    <div className="py-8">
-      <CardSlider />
-      <NewArrivals />
-      <WhyChooseUs />
-      <AboutUs />
-      <BlogPostSection />
-      <ReviewSection />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/vendors" element={<VendorPage />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;
