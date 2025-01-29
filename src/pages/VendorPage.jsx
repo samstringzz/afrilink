@@ -2,6 +2,7 @@ import CardSlider from '../components/CardSlider';
 import Hero from '../components/Hero';
 import ShopCategories from '../components/ShopCategories';
 import NewArrivals from '../components/NewArrivals';
+import Footer from '../components/Footer';
 
 
 const VendorPage = () => {
@@ -12,6 +13,7 @@ const VendorPage = () => {
       <ShopCategories />
       <CardSlider />
       <NewArrivals />
+      <Footer />
       {/* Add other vendor-related components as needed */}
     </div>
   );
